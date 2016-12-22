@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FTP_ROOT>
+  <!--目标站点-->
+  <FTP_AIM>
+    <FTP_SITELIST NAME="test.home.com" LOCALPATH="E:/Home.CSTrack.Admin" LOCALBAKTRANSFOLDER="E:/trans_back/">
+      
+      <!--LOCALPATH目录内结构需与DIRPATH目录结构相同-->
+      <!--服务器别名，IP地址，端口号，传输缓存文件夹，文件备份根目录,用户名，密码-->
+      <Aim_Server NAME="kehutest_10" IP="10.10.10.10" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="BACK_EBS_19" USER="111111" PASS="111111" DIRPATH="kehutest.home.com">
+      </Aim_Server>
+      <Aim_Server NAME="kehutest_11" IP="10.10.10.11" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="BACK_EBS_20" USER="111111" PASS="111111" DIRPATH="kehutest.home.com">
+      </Aim_Server>
+    </FTP_SITELIST>
+
+ <FTP_SITELIST NAME="home.com" LOCALPATH="E:/Home.CSTrack.Admin" LOCALBAKTRANSFOLDER="E:/trans_back/">
+
+      <!--LOCALPATH目录内结构需与DIRPATH目录结构相同-->
+      <!--服务器别名，IP地址，端口号，传输缓存文件夹，文件备份根目录,用户名，密码-->
+      <Aim_Server NAME="kehu_10" IP="10.10.10.10" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="Back_Home_Kehu_241" USER="111111" PASS="111111" DIRPATH="kehu.home.com">
+      </Aim_Server>
+      <Aim_Server NAME="kehu_11" IP="10.10.10.11" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="Back_Home_Kehu_240" USER="111111" PASS="111111" DIRPATH="kehu.home.com">
+      </Aim_Server>
+    </FTP_SITELIST>
+
+    <FTP_SITELIST NAME="webapi.kehutest" LOCALPATH="E:/Home.CSTrack.WebAPI" LOCALBAKTRANSFOLDER="E:/webapitest/trans_back/">
+
+      <!--LOCALPATH目录内结构需与DIRPATH目录结构相同-->
+      <!--服务器别名，IP地址，端口号，传输缓存文件夹，文件备份根目录,用户名，密码-->
+      <Aim_Server NAME="kehu_10" IP="10.10.10.10" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="Back_Home_Kehu_241" USER="111111" PASS="111111" DIRPATH="webapi.kehutest.home.com">
+      </Aim_Server>
+      <Aim_Server NAME="kehu_11" IP="10.10.10.11" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="Back_Home_Kehu_240" USER="111111" PASS="111111" DIRPATH="webapi.kehutest.home.com">
+      </Aim_Server>
+    </FTP_SITELIST>
+    <FTP_SITELIST NAME="webapi.kehu" LOCALPATH="E:/Home.CSTrack.WebAPI" LOCALBAKTRANSFOLDER="E:/webapi/trans_back/">
+
+      <!--LOCALPATH目录内结构需与DIRPATH目录结构相同-->
+      <!--服务器别名，IP地址，端口号，传输缓存文件夹，文件备份根目录,用户名，密码-->
+      <Aim_Server NAME="kehu_10" IP="10.10.10.10" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="Back_Home_Kehu_241" USER="111111" PASS="111111" DIRPATH="webapi.kehu.home.com">
+      </Aim_Server>
+      <Aim_Server NAME="kehu_10" IP="10.10.10.11" PORT="21" TRANSFOLDER="FTF" FILEBAKROOT="Back_Home_Kehu_240" USER="111111" PASS="111111" DIRPATH="webapi.kehu.home.com">
+      </Aim_Server>
+    </FTP_SITELIST>
+  </FTP_AIM>
+</FTP_ROOT>

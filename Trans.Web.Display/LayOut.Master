@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayOut.master.cs" Inherits="Trans.Web.Display.LayOut" %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>文件同步系统</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+      <style>
+
+      </style>
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header" style="text-align:center" >
+          <a class="navbar-brand"  href="Default.aspx">文件同步系统</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li class="active"><a href="Default.aspx"><i class="fa fa-dashboard"></i> 首页</a></li>
+           <%=MenuListText %>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%=UserName %> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="Left.aspx?Excel=1"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <div id="page-wrapper">
+              <div id="main">   
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+                     子页面内容                
+
+                 </asp:ContentPlaceHolder>
+                  </div>
+        <div class="row">
+            </div>
+            </div>
+    </div>
+  </body>
+</html>
